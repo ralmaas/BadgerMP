@@ -6,6 +6,8 @@ import gc
 import qrcode
 import badger_os
 
+# 2023-03-14/ralm Made changes to read NRK
+
 # URLS to use (Entertainment, Science and Technology)
 # https://www.nrk.no/sport/toppsaker.rss
 URL = [
