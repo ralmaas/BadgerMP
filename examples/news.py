@@ -130,6 +130,7 @@ def draw_qr_code(ox, oy, size, code):
 def get_rss(url):
     try:
         stream = urequest.urlopen(url)
+        # NRK is not using tag guid but link (causing a slightly longer URL)
         # output = list(parse_xml_stream(stream, [b"title", b"description", b"guid", b"pubDate"], b"item"))
         output = list(parse_xml_stream(stream, [b"title", b"description", b"link", b"pubDate"], b"item"))
         return output
